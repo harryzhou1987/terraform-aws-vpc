@@ -1,7 +1,6 @@
 # terraform-aws-vpc
 This is a terraform template for basic networking architecture (3-tier app) on AWS including VPC, subnets, Internet gateway, NAT Gateways, route tables, bastion host etc.
 
-
 ## Config Method
 
 1. Add access-key and secret key in aws_credential_profile via updating ~/.aws/credentials
@@ -26,5 +25,4 @@ terraform destroy --auto-approve
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
 Please make sure to update tests as appropriate.
