@@ -2,7 +2,6 @@
 This is a terraform template for basic networking architecture (3-tier app) on AWS including VPC, subnets, Internet gateway, NAT Gateways, route tables, bastion host etc.
 
 ## Config Method
-
 1. Add access-key and secret key in aws_credential_profile via updating ~/.aws/credentials
 2. Update [h0-terraform.auto.tfvars](https://github.com/harryzhou1987/terraform-aws-vpc/blob/main/h0-terraform.auto.tfvars) with your own variables
 3. (Optioanl) If you need tfstate file stored in AWS S3 bucket, create a bucket first and then uncomment and update backend part in [h1-versions.tf](https://github.com/harryzhou1987/terraform-aws-vpc/blob/main/h1-versions.tf)
