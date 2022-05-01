@@ -16,7 +16,7 @@ variable "team" {
   type = string
 }
 
-# Team
+# Credential Profile
 variable "aws_credential_profile" {
   description = "Your Own AWS credential Profile"
   type = string
