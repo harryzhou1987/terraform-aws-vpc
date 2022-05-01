@@ -7,6 +7,17 @@ This is a terraform template for basic networking architecture (3-tier app) on A
 1. Add access-key and secret key in aws_credential_profile via updating ~/.aws/credentials
 2. Update [h0-terraform.auto.tfvars](https://github.com/harryzhou1987/terraform-aws-vpc/blob/main/h0-terraform.auto.tfvars) with your own variables
 3. (Optioanl) If you need tfstate file stored in AWS S3 bucket, create a bucket first and then uncomment and update backend part in [h1-versions.tf](https://github.com/harryzhou1987/terraform-aws-vpc/blob/main/h1-versions.tf)
+4. Run terraform init/validate/plan and apply
+```
+terraform init
+terraform validate
+terraform plan
+terraform apply --auto-approve
+```
+5. (Optional) Destroy the infrastructure
+```
+terraform destroy --auto-approve
+```
 
 ## Notes
 - Only one bastion host is created. Remember to have an existing key pair file in you AWS account. Update it in [h0-terraform.auto.tfvars](https://github.com/harryzhou1987/terraform-aws-vpc/blob/main/h0-terraform.auto.tfvars)
