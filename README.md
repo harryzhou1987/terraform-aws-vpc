@@ -14,6 +14,7 @@ terraform apply --auto-approve
 ```
 5. (Optional) Destroy the infrastructure
 ```
+terraform plan --destroy
 terraform destroy --auto-approve
 ```
 
