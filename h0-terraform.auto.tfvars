@@ -14,9 +14,9 @@ vpc_database_subnets  = ["20.0.151.0/24", "20.0.152.0/24"]
 vpc_create_database_subnet_group           = true
 vpc_create_database_subnet_route_table     = true
 vpc_enable_nat_gateway = true
-vpc_single_nat_gateway = false
-vpc_one_nat_gateway_per_az = true
+vpc_single_nat_gateway = true
+vpc_one_nat_gateway_per_az = false
 
 # EC2 Instance Variable
 instance_type = "t3.micro"
-instance_keypair = "private-lora-central"
+instance_keypair = "private-lora-central"   # Your own key pair
